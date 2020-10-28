@@ -178,8 +178,6 @@
     <script>
         window.onload = () => {
             let item = document.querySelector(".Sticker");
-            item.classList.add("Sticker--loading");
-
             let id = (parseInt(item.getAttribute("data-id")) || <?=$stickers_id[0]?>);
             let uri = "https://vk.com/sticker/1-"+ id + "-512";
             let animUri = "https://vk.com/sticker/3-" + id + "-0.json";
@@ -192,19 +190,16 @@
                     autoplay: true,
                     path: animUri
                 });
-                item.style.backgroundImage = 'url("")';
 
                 setTimeout(() => {
-                    item.classList.remove("Sticker--loading");
-                }, 50);
+                    item.style.backgroundImage = 'url("")';
+                }, 150)
+
             }).catch(() => {
                 let img = new Image();
 
                 img.onload = () => {
                     item.style.backgroundImage = "url("+ uri +")";
-                    setTimeout(() => {
-                        item.classList.remove("Sticker--loading");
-                    }, 50);
                 }
 
                 setTimeout(() => {
