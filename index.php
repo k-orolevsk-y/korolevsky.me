@@ -1,5 +1,5 @@
 <?php
-	$stickers_id = [ 50358, 50401 ];
+	$stickers_id = [ 20455, 20502 ];
 
 
 	$rand = $_GET['sticker_id'] ?? random_int($stickers_id[0], $stickers_id[1]);
@@ -178,14 +178,13 @@
     <script>
         window.onload = () => {
             let item = document.querySelector(".Sticker");
-            let id = (parseInt(item.getAttribute("data-id")) || <?=$stickers_id[0]?>);
+            item.classList.add("Sticker--loading");
 
+            let id = (parseInt(item.getAttribute("data-id")) || <?=$stickers_id[0]?>);
             let uri = "https://vk.com/sticker/1-"+ id + "-512";
             let animUri = "https://vk.com/sticker/3-" + id + "-0.json";
 
             fetch(animUri).then(() => {
-                item.style.backgroundImage = 'url("")';
-
                 lottie.loadAnimation({
                     container: document.getElementsByClassName('Sticker')[0],
                     renderer: 'svg',
@@ -193,6 +192,7 @@
                     autoplay: true,
                     path: animUri
                 });
+                item.style.backgroundImage = 'url("")';
 
                 setTimeout(() => {
                     item.classList.remove("Sticker--loading");
