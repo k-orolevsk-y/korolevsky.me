@@ -7,6 +7,12 @@ RewriteRule (.*) https://korolevsky.me/ [L,R=301,QSA]
 RewriteCond %{THE_REQUEST} ^.*/index\.php
 RewriteRule ^(.*)index.php$ / [R=301,L]
 
+Redirect 301 /vk https://korolevsky.me/?vk
+Redirect 301 /insta https://korolevsky.me/?insta
+Redirect 301 /gh https://korolevsky.me/?gh
+Redirect 301 /tg https://korolevsky.me/?tg
+Redirect 301 /tt https://korolevsky.me/?tt
+
 ErrorDocument 300 https://korolevsky.me
 ErrorDocument 404 https://korolevsky.me
 ErrorDocument 403 https://korolevsky.me
