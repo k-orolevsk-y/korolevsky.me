@@ -1,5 +1,5 @@
 <?php
-	$stickers_id = [ 20455, 20502 ];
+	$stickers_id = [ 13312, 13359 ];
 
 
 	$rand = $_GET['sticker_id'] ?? random_int($stickers_id[0], $stickers_id[1]);
@@ -7,10 +7,11 @@
 	$headers = get_headers('https://vk.com/sticker/1-' . $rand . '-512');
 	if(substr($headers[0], 9, 3) != 200) $rand = random_int($stickers_id[0], $stickers_id[1]);
 
-	if(isset($_GET['vk'])) die('<script>window.location.href="https://vk.com/k.orolevsky"</script>');
+	if(isset($_GET['vk'])) die('<script>window.location.href="https://vk.com/kkphp"</script>');
     elseif(isset($_GET['insta'])) die('<script>window.location.href="https://instagram.com/k.orolevsk.y"</script>');
     elseif(isset($_GET['gh'])) die('<script>window.location.href="https://github.com/k-orolevsk-y"</script>');
-    elseif(isset($_GET['tg'])) die('<script>window.location.href="https://t.me/koro1evsky"</script>');
+    elseif(isset($_GET['tg'])) die('<script>window.location.href="https://t.me/kkphp"</script>');
+    elseif(isset($_GET['tt'])) die('<script>window.location.href="https://vm.tiktok.com/ZSbN4aau/"</script>');
 ?>
 <!DOCTYPE html>
 <html>
@@ -95,16 +96,20 @@
             color: #0088cc;
         }
 
+        .tt {
+            color: skyblue;
+        }
+
         @media screen and (max-width: 414px) {
             .social-media a {
-                font-size: 52px;
+                font-size: 44px;
                 margin-left: 0.8em;
             }
         }
 
         @media screen and (max-width: 320px) {
             .social-media a {
-                font-size: 48px;
+                font-size: 38px;
                 margin-left: 0.5em;
             }
         }
@@ -124,10 +129,11 @@
 <body>
 <div class="Sticker" data-id="<?=$rand?>"></div>
 <div class="social-media">
-    <a href="https://vk.com/k.orolevsky" target="_blank" class="vk"><i class="fab fa-vk"></i></a>
+    <a href="https://vk.com/kkphp" target="_blank" class="vk"><i class="fab fa-vk"></i></a>
     <a href="https://instagram.com/k.orolevsk.y" target="_blank" class="insta"><i class="fab fa-instagram"></i></a>
+    <a href="https://vm.tiktok.com/ZSbN4aau/" target="_blank" class="tt"><i class="fab fa-tiktok"></i></a>
     <a href="https://github.com/k-orolevsk-y" target="_blank" class="gh"><i class="fab fa-github"></i></a>
-    <a href="https://t.me/koro1evsky" target="_blank" class="tg"><i class="fab fa-telegram"></i></a>
+    <a href="https://t.me/kkphp" target="_blank" class="tg"><i class="fab fa-telegram"></i></a>
 </div>
 
 <?php if(!isset($_GET['anim'])): ?>
