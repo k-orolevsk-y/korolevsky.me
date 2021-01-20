@@ -1,5 +1,5 @@
 <?php
-	$stickers_id = [ 13312, 13359 ];
+	$stickers_id = [ 53697, 53744 ];
 
 
 	$rand = $_GET['sticker_id'] ?? random_int($stickers_id[0], $stickers_id[1]);
@@ -26,6 +26,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Сайт веб-разработчика Кирилла Королевского с его контактными данными."/>
     <title>KOROLEVSKY.ME</title>
     <style>
         html {
@@ -97,19 +98,19 @@
         }
 
         .tt {
-            color: skyblue;
+            color: powderblue;
         }
 
         @media screen and (max-width: 414px) {
             .social-media a {
-                font-size: 44px;
+                font-size: 42px;
                 margin-left: 0.8em;
             }
         }
 
         @media screen and (max-width: 320px) {
             .social-media a {
-                font-size: 38px;
+                font-size: 36px;
                 margin-left: 0.5em;
             }
         }
@@ -131,8 +132,8 @@
 <div class="social-media">
     <a href="https://vk.com/kkphp" target="_blank" class="vk"><i class="fab fa-vk"></i></a>
     <a href="https://instagram.com/k.orolevsk.y" target="_blank" class="insta"><i class="fab fa-instagram"></i></a>
-    <a href="https://vm.tiktok.com/ZSbN4aau/" target="_blank" class="tt"><i class="fab fa-tiktok"></i></a>
     <a href="https://github.com/k-orolevsk-y" target="_blank" class="gh"><i class="fab fa-github"></i></a>
+    <a href="https://vm.tiktok.com/ZSbN4aau/" target="_blank" class="tt"><i class="fab fa-tiktok"></i></a>
     <a href="https://t.me/kkphp" target="_blank" class="tg"><i class="fab fa-telegram"></i></a>
 </div>
 
@@ -198,7 +199,7 @@
                 });
 
                 setTimeout(() => {
-                    item.style.backgroundImage = 'url("")';
+                    item.style.backgroundImage = "none";
                 }, 150)
 
             }).catch(() => {
