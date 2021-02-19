@@ -82,7 +82,7 @@
         }
 
         .vk {
-            color: #4a76a8;
+            color: #2787F5;
         }
 
         .insta {
@@ -125,16 +125,17 @@
         }
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
     <script src="js/lottie/lottie.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="Sticker" data-id="<?=$rand?>"></div>
 <div class="social-media">
-    <a href="https://vk.com/kkphp" target="_blank" class="vk"><i class="fab fa-vk"></i></a>
-    <a href="https://instagram.com/k.orolevsk.y" target="_blank" class="insta"><i class="fab fa-instagram"></i></a>
-    <a href="https://github.com/k-orolevsk-y" target="_blank" class="gh"><i class="fab fa-github"></i></a>
+    <a href="https://vk.com/kkphp" target="_blank" class="vk"><i class="lni lni-vk"></i></a>
+    <a href="https://instagram.com/k.orolevsk.y" target="_blank" class="insta"><i class="lni lni-instagram"></i></a>
+    <a href="https://github.com/k-orolevsk-y" target="_blank" class="gh"><i class="lni lni-github"></i></a>
     <a href="https://vm.tiktok.com/ZSbN4aau/" target="_blank" class="tt"><i class="fab fa-tiktok"></i></a>
-    <a href="https://t.me/kkphp" target="_blank" class="tg"><i class="fab fa-telegram"></i></a>
+    <a href="https://t.me/kkphp" target="_blank" class="tg"><i class="lni lni-telegram"></i></a>
 </div>
 
 <?php if(!isset($_GET['anim'])): ?>
