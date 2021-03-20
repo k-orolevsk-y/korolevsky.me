@@ -133,9 +133,9 @@
 <div class="social-media">
     <a href="https://vk.com/kkphp" target="_blank" class="vk"><i class="lni lni-vk"></i></a>
     <a href="https://instagram.com/k.orolevsk.y" target="_blank" class="insta"><i class="lni lni-instagram"></i></a>
-    <a href="https://github.com/k-orolevsk-y" target="_blank" class="gh"><i class="lni lni-github"></i></a>
+    <a href="https://github.com/k-orolevsk-y" target="_blank" class="gh"><i class="fab fa-github"></i></a>
     <a href="https://vm.tiktok.com/ZSbN4aau/" target="_blank" class="tt"><i class="fab fa-tiktok"></i></a>
-    <a href="https://t.me/kkphp" target="_blank" class="tg"><i class="lni lni-telegram"></i></a>
+    <a href="https://t.me/kkphp" target="_blank" class="tg"><i class="fab fa-telegram"></i></a>
 </div>
 
 <?php if(!isset($_GET['anim'])): ?>
